@@ -1,0 +1,76 @@
+.aboutUs {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Josefin Sans";
+}
+.AboutUs_img {
+  height: auto;
+  width: 105vw;
+}
+.blank {
+  height: 0.1vw;
+  position: relative;
+  margin-top: -3vw;
+  background-color: var(--black);
+}
+
+.values_container {
+  background-color: var(--light);
+  position: absolute;
+  margin-top: -49vw;
+  margin-left: 5vw;
+  width: 90vw;
+  height: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.values_container h2 {
+  font-size: 2.3vw;
+  color: var(--yellow);
+  letter-spacing: 0.3vw;
+  margin-bottom: 4vw;
+}
+.values {
+  width: 86vw;
+  display: flex;
+  justify-content: space-between;
+}
+.value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.value img {
+  width: 16vw;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
+}
+.value h4 {
+  color: var(--gray-light);
+  font-size: 1.2vw;
+  font-weight: 800;
+  margin: 1vw 0 0 0;
+}
+.value p {
+  text-align: center;
+  color: var(--gray-light);
+  font-weight: 300;
+  margin: 1vw 0 0 0;
+  font-size: 1vw;
+}
+
+.first_value {
+  width: 18vw;
+  text-align: center;
+}
+.second_value img {
+  width: 35.86vw;
+}
+.third_value {
+  width: 18vw;
+  text-align: justify;
+}
