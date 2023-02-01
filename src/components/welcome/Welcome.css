@@ -1,5 +1,74 @@
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   .makeStyles-welcome-7 {
     margin-top: 14.3vw !important;
   }
+} */
+
+.imgWelcome_container {
+  height: 48vw;
+  background-color: #0d0d0d;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  /* justify-content:; */
+}
+.women,
+.men {
+  transform: rotate(20deg);
+  height: 60vw;
+  width: 35%;
+  overflow: hidden;
+}
+
+.women {
+  margin-left: -2vw;
+  padding-left: 3vw;
+}
+.woman_turned {
+  /* background-color: black; */
+  height: 65vw;
+  width: 39vw;
+  transform: rotate(-20deg);
+  background-image: url("../../assets/fontScreen/woman.png");
+  background-position: -15vw 0px;
+  background-repeat: no-repeat;
+  background-size: 65vw;
+}
+.men {
+  background-color: #0d0d0d;
+  border-left: solid white 1vw;
+
+  padding-right: 5vw;
+}
+.man_turned {
+  height: 75vw;
+  width: 45vw;
+  transform: rotate(-20deg);
+  background-image: url("../../assets/fontScreen/man.png");
+  background-position: 0vw 4vw;
+  background-repeat: no-repeat;
+  background-size: 33vw;
+  margin-left: 4vw;
+}
+.phis_eco {
+  /* background-color: rgb(187, 12, 12); */
+  width: 30%;
+  height: 60vw;
+  margin-left: 1.5vw;
+  transform: rotate(20deg);
+  overflow: hidden;
+  border-left: solid white 1vw;
+  background-color: #0d0d0d;
+}
+.phis_eco_turned {
+  /* background-color: blue; */
+  position: relative;
+  height: 45vw;
+  width: 39vw;
+  transform: rotate(-20deg);
+  background-image: url("../../assets/logo/Logo_PhysEco.svg");
+  background-position: 1.5vw 12vw;
+  background-repeat: no-repeat;
+  background-size: 15vw;
+  margin-left: 4vw;
 }
