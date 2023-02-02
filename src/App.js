@@ -32,9 +32,6 @@ const App = () => {
     fetchCart();
   }, []);
 
-  console.log(cart);
-  // console.log(articles);
-  //regler le souci du total item qui est à 118
   return (
     <>
       <Navbar />

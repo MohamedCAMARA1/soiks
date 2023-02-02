@@ -1,18 +1,19 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-const drawerWidth = 0;
+// const drawerWidth = 0;
 
 export default makeStyles((theme) => ({
   appBar: {
-    // boxShadow: "none",
-    // borderBottom: "1px solid rgba(0, 0, 0, 0.12)",
-    [theme.breakpoints.up("sm")]: {
-      width: `calc(100% - ${drawerWidth}px)`,
-      marginLeft: drawerWidth,
-    },
+    // height: "4.5vw",
+    // height: `calc(${heightScreen / 617}vw)`,
+    // [theme.breakpoints.up("sm")]: {
+    //   width: `calc(100% - ${drawerWidth}px)`,
+    //   marginLeft: drawerWidth,
+    // },
     background:
-      "linear-gradient(300deg, rgba(210,194,134,1) 10%,rgba(130,119,89,1) 28%, rgba(1,1,1,1) 36.5%)",
+      "linear-gradient(to right,rgba(1,1,1,1), #423939, rgba(210,194,134,1))",
   },
+
   title: {
     flexGrow: 1,
     alignItems: "center",
@@ -20,9 +21,6 @@ export default makeStyles((theme) => ({
     textDecoration: "none",
   },
 
-  image: {
-    marginRight: "10px",
-  },
   refreshHome: {
     // fontFamily: "Josefin Sans",
     fontSize: "2vw",
@@ -30,6 +28,10 @@ export default makeStyles((theme) => ({
     letterSpacing: "3vw",
     fontWeight: "600",
     color: "#C19440",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "4vw",
+    },
+    // [theme.breakpoints.down("md")]: { fontSize: "4vw" },
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -37,8 +39,16 @@ export default makeStyles((theme) => ({
       display: "none",
     },
   },
-  bandes: { width: "2vw", margin: "2vw" },
+  bandes: {
+    width: "2vw",
+    margin: "2vw",
+    [theme.breakpoints.down("md")]: {
+      width: "4vw",
+    },
+  },
   grow: {
     flexGrow: 1,
   },
+
+  [theme.breakpoints.down("sm")]: {},
 }));

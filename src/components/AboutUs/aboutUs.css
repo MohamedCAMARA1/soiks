@@ -74,3 +74,25 @@
   width: 18vw;
   text-align: justify;
 }
+
+.myCarousel {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .values_container {
+    display: none;
+  }
+  .AboutUs_img {
+    display: none;
+  }
+  .myCarousel {
+    display: block;
+    width: 100%;
+  }
+
+  .myCarousel img {
+    width: 100%;
+    height: auto;
+  }
+}

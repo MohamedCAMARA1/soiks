@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import MakeLogo from "./MakeLogo/MakeLogo";
+// import MakeLogo from "./MakeLogo/MakeLogo";
 
 import machine from "../../assets/fontScreen/machine_coudre.png";
 
@@ -37,18 +37,21 @@ const Footer = () => {
             <h3>Vous pouvez nous suivre sur nos réseaux</h3>
             <div className="media-icons">
               <a href={1} target="_blank" rel="noreferrer">
-                <MakeLogo pathLogo={insta} nomLogo="instagram" logoSize="3vw" />
+                <img src={insta} alt="" className="social-media-logo" />
+                {/* <MakeLogo pathLogo={insta} nomLogo="instagram" logoSize="3vw" /> */}
               </a>
               <a href={1}>
-                <MakeLogo
+                <img src={facebook} alt="" className="social-media-logo" />
+                {/* <MakeLogo
                   pathLogo={facebook}
                   nomLogo="facebook"
                   logoSize="4vw"
-                />
+                /> */}
               </a>
 
               <a href={1}>
-                <MakeLogo pathLogo={twitter} nomLogo="twitter" logoSize="4vw" />
+                <img src={twitter} alt="" className="social-media-logo" />
+                {/* <MakeLogo pathLogo={twitter} nomLogo="twitter" logoSize="4vw" /> */}
               </a>
             </div>
           </div>

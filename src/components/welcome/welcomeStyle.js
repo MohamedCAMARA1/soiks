@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-export default makeStyles(() => ({
+export default makeStyles((theme) => ({
   welcome: {
     height: "auto",
     width: "100%",
@@ -14,6 +14,12 @@ export default makeStyles(() => ({
     marginLeft: "60.5vw",
     marginTop: "10vw",
     zIndex: "999",
+
+    [theme.breakpoints.down("xs")]: {
+      marginTop: "20vw",
+      marginLeft: "70.5vw",
+      width: "25vw",
+    },
   },
   fontImg: {
     height: "auto",
@@ -27,12 +33,13 @@ export default makeStyles(() => ({
     marginLeft: "27vw",
     background: "whitesmoke",
     display: "flex",
-    flexDirection: "column",
+    // flexDirection: "column",
     justifyContent: "space-evenly;",
     alignItems: "center",
     fontFamily: "Josefin Sans",
     color: "#C19440",
   },
+
   typeOfClothes: {
     overflow: "hidden",
     // width: "15.5vw",
@@ -46,6 +53,22 @@ export default makeStyles(() => ({
     alignItems: "stretch",
     fontFamily: "Josefin Sans",
     fontSize: "3.5vw",
+
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      flexDirection: "column",
+      marginTop: "-120vw",
+      // marginLeft: "40vw",
+      margin: "0",
+      padding: "0",
+      height: "145vw",
+    },
+
+    //taille ecran <600
+    [theme.breakpoints.down("xs")]: {
+      marginTop: "-174vw",
+      height: "205vw",
+    },
   },
   clothesLink: {
     width: "20vw",
@@ -60,6 +83,13 @@ export default makeStyles(() => ({
     "&:hover": {
       backgroundColor: "#FFA064",
     },
+
+    [theme.breakpoints.down("sm")]: {
+      margin: "0",
+      width: "100%",
+      borderRadius: "0",
+      // marginTop: "10vw",
+    },
   },
   phisEco_link: {
     marginRight: "-5vw",
@@ -68,10 +98,25 @@ export default makeStyles(() => ({
       backgroundColor: "#03AF4D",
       boxShadow: "#273A43 2.4px 2.4px 3.2px",
     },
+
+    [theme.breakpoints.down("xs")]: {
+      marginTop: "1.5vw",
+    },
   },
   woman_link: {
     marginLeft: "-5vw",
+
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "0vw",
+      margin: "0",
+    },
   },
+  man_link: {
+    [theme.breakpoints.down("sm")]: {
+      // marginTop: "45vw",
+    },
+  },
+
   spandiv: {
     zIndex: "3",
     position: "relative",
@@ -80,5 +125,22 @@ export default makeStyles(() => ({
     fontWeight: "bold",
     top: "-2.5vw",
     left: "93vw",
+
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "2.5vw",
+      color: "white",
+      left: "65vw",
+      top: "-0.8vw",
+      height: "400px",
+      fontStyle: "italic",
+    },
+
+    [theme.breakpoints.down("xs")]: {
+      top: "-5vw",
+      left: "65vw",
+      color: "white",
+      fontSize: "3vw",
+      fontStyle: "italic",
+    },
   },
 }));

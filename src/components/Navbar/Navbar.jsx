@@ -46,7 +46,7 @@ const Navbar = ({ totalItems }) => {
             <div className={classes.button}>
               <IconButton area-aria-label="show cart items" color="inherit">
                 <Badge
-                  badgeContent={2}
+                  badgeContent={5}
                   // badgeContent={totalItems}
                   color="secondary"
                   overlap="rectangular"
